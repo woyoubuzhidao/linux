@@ -38,3 +38,10 @@ nohup  java -jar ace-gate.jar >ace-gate.text &
 nohup  java -jar ace-file-upload.jar >ace-file-upload.text &
 
 nohup  java -jar hodo-sender.jar >hodo-sender.text &
+
+
+
+
+
+
+123
