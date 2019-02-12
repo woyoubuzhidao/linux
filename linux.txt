@@ -1,0 +1,40 @@
+redis启动
+systemctl daemon-reload 
+systemctl start redis-server.service 
+systemctl enable redis-server.service
+
+
+rabbitmq启动
+systemctl start rabbitmq-server
+systemctl enable rabbitmq-server
+
+启动nginx
+cd /usr/local/nginx/sbin/
+./nginx 
+./nginx -s stop
+./nginx -s quit
+./nginx -s reload
+
+停止服务（上传文件微服务）
+cd /opt
+ps aux|grep java
+kill -9 pid
+
+启动服务 
+cd /opt
+
+nohup  java -jar ace-center.jar >ace-center.text &
+
+nohup  java -jar ace-config.jar >ace-config.text &
+
+nohup  java -jar ace-auth.jar >ace-auth.text &
+
+nohup  java -jar ace-admin.jar >ace-admin.text &
+
+nohup  java -jar ace-dict.jar >ace-dict.text &
+
+nohup  java -jar ace-gate.jar >ace-gate.text &
+
+nohup  java -jar ace-file-upload.jar >ace-file-upload.text &
+
+nohup  java -jar hodo-sender.jar >hodo-sender.text &
