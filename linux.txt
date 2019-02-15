@@ -1,26 +1,26 @@
-redisÆô¶¯
+rediså¯åŠ¨
 systemctl daemon-reload 
 systemctl start redis-server.service 
 systemctl enable redis-server.service
 
 
-rabbitmqÆô¶¯
+rabbitmqå¯åŠ¨
 systemctl start rabbitmq-server
 systemctl enable rabbitmq-server
 
-Æô¶¯nginx
+å¯åŠ¨nginx
 cd /usr/local/nginx/sbin/
 ./nginx 
 ./nginx -s stop
 ./nginx -s quit
 ./nginx -s reload
 
-Í£Ö¹·şÎñ£¨ÉÏ´«ÎÄ¼şÎ¢·şÎñ£©
+åœæ­¢æœåŠ¡ï¼ˆä¸Šä¼ æ–‡ä»¶å¾®æœåŠ¡ï¼‰
 cd /opt
 ps aux|grep java
 kill -9 pid
 
-Æô¶¯·şÎñ 
+å¯åŠ¨æœåŠ¡ 
 cd /opt
 
 nohup  java -jar ace-center.jar >ace-center.text &
@@ -40,16 +40,3 @@ nohup  java -jar ace-file-upload.jar >ace-file-upload.text &
 nohup  java -jar hodo-sender.jar >hodo-sender.text &
 
 
-
-
-
-
-123
-
-ÎÒÓÖ²»ÖªµÀ
-
-ºÇºÇ
-
-15061593763
-
-657407048
